@@ -1,2 +1,5 @@
 name = "DetrendedFluctuationAnalysis"
 uuid = "e141d9f0-ba0b-11eb-398f-d115ee898406"
+
+[deps]
+Polynomials = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"

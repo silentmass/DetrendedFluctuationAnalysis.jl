@@ -17,8 +17,7 @@ The implementation is based, among others, on this article:
 In Julia, enter :
 
 ```julia
-julia> using Pkg
-Pkg.clone("https://github.com/johncwok/DetrendedFluctuationAnalysis.jl.git")
+pkg> add https://github.com/silentmass/DetrendedFluctuationAnalysis.jl.git
 ```
 and then :
 

@@ -23,8 +23,8 @@ end
 
 function detrending(values; order = 1)
     position = collect(1:length(values))
-    fit = polyfit(position,values,order)
-    return values - polyval(fit,position)
+    pfit = Polynomials.PolyCompat.polyfit(position,values,order)
+    return values - Polynomials.PolyCompat.polyval(pfit,position)
 end
 
 function fluctuation_function(x,y, box_start::Int, box_stop::Int, nb_pts::Int, step::Int)
